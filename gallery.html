@@ -1,1 +1,124 @@
+<!-- =========================
+FILE: gallery.html
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery · Capuchino Archive</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="search.js"></script>
+</head>
+<body>
+  <div class="site-frame">
+    <div class="topbar"><div>Capuchino.es — Estate Historical Library</div><div>Visual Catalogue</div></div>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="brand-panel">
+          <div class="brand-kicker">Visual Register</div>
+          <div class="brand-title">GALLERY</div>
+          <div class="brand-subtitle">Ships, Estates, Orders, and Routes</div>
+        </div>
+        <div class="banner-panel">
+          <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="potosi.html">Potosí</a>
+            <a href="maritime.html">Maritime Enterprise</a>
+            <a href="treatise.html">Treatise</a>
+            <a class="active" href="gallery.html">Gallery</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="archive-label">// Visual Catalogue</div>
+        <nav class="sidebar-nav">
+          <a href="index.html">Home Register</a>
+          <a href="biography.html">Early Life & Formation</a>
+          <a href="potosi.html">Potosí & Lima</a>
+          <a href="maritime.html">Private Maritime Enterprise</a>
+          <a href="treatise.html">Combative Merchanting</a>
+          <a class="active" href="gallery.html">Ships, Orders & Estates</a>
+        </nav>
+        <div class="sidebar-card">
+          <h3>Recommended Assets</h3>
+          <p>Portrait</p>
+          <p>Andalusian estate</p>
+          <p>Cádiz office</p>
+          <p>Atlantic routes map</p>
+          <p>Orders and medals</p>
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="breadcrumb">CAPUCHINO.ES &gt; Historical Library &gt; Gallery &gt; Ships, Estates, and Orders</div>
+        <section class="page-hero">
+          <div>
+            <div class="portrait-box">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Estate placeholder">
+            </div>
+            <div class="caption"><strong>Estate or library image.</strong> This page works best once the placeholders are replaced by engravings, maps, and heraldic graphics.</div>
+          </div>
+          <div>
+            <div class="hero-meta">Visual archive · holdings, routes, decorations, family image material</div>
+            <h1 class="hero-title">Ships, Orders, Properties, and Holdings</h1>
+            <p>This page is designed as a visual catalogue rather than a narrative essay. Use it for portraiture, vessel depictions, route maps, estate images, office elevations, orders, medals, archival seals, and title pages.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Primary Gallery</h2>
+          <div class="gallery-grid">
+            <article class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=80" alt="Ship placeholder">
+              <div class="gallery-copy"><strong>San Cristóforo</strong><br>First Atlantic commission vessel and the setting of his near-fatal illness.</div>
+            </article>
+            <article class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&w=1200&q=80" alt="Flagship placeholder">
+              <div class="gallery-copy"><strong>Le Saint-Esprit de Saint Diodore de Cappadoce</strong><br>Principal flagship of the private company.</div>
+            </article>
+            <article class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" alt="Estate placeholder">
+              <div class="gallery-copy"><strong>Andalusian Estate and Private Library</strong><br>The family seat and ideal symbolic anchor for the entire archive.</div>
+            </article>
+            <article class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Harbor placeholder">
+              <div class="gallery-copy"><strong>Cádiz Office</strong><br>Administrative and symbolic center of the private enterprise.</div>
+            </article>
+            <article class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1200&q=80" alt="Route placeholder">
+              <div class="gallery-copy"><strong>Lima–Havana–Cádiz Route</strong><br>Use for a map graphic or route diagram.</div>
+            </article>
+            <article class="gallery-card">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80" alt="Treatise placeholder">
+              <div class="gallery-copy"><strong>Treatise or Orders Display</strong><br>Ideal for a manuscript title page, Calatrava insignia, or family seal.</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Implementation Notes</h2>
+          <div class="note-box">
+            <h3>Best Folder Structure</h3>
+            <p>Create <code>images/</code> and <code>documents/</code> folders in the repository root. Store portraits, engravings, maps, medal scans, and archival PDFs there. Replace every placeholder image URL with local file paths once you have your final materials.</p>
+          </div>
+
+          <div class="search-panel-wrapper">
+            <form class="search-panel" data-archive-search>
+              <input type="search" placeholder="Search the archive from this page...">
+              <button type="submit">Search</button>
+            </form>
+            <div class="search-results"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">Visual catalogue division of the Capuchino Estate Historical Library</footer>
+  </div>
+</body>
+</html>
