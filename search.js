@@ -1,6 +1,3 @@
-<!-- =========================
-FILE: search.js
-========================= -->
 const archiveIndex = [
   {
     title: "Home · Archive Overview",
