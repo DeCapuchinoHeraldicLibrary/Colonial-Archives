@@ -1,39 +1,149 @@
+<!-- =========================
 FILE: index.html
-========================= */
-
+========================= -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
-<title>Capuchino Archive</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Capuchino Estate Archive</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="search.js"></script>
 </head>
 <body>
+  <div class="site-frame">
+    <div class="topbar">
+      <div>Capuchino.es — Estate Historical Library</div>
+      <div>Archive Register · Family Catalogue · Search Enabled</div>
+    </div>
 
-<div class="container">
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="brand-panel">
+          <div class="brand-kicker">Andalusian Family Archive</div>
+          <div class="brand-title">CAPUCHINO</div>
+          <div class="brand-subtitle">Historical Library & Estate Record</div>
+        </div>
+        <div class="banner-panel">
+          <nav class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="potosi.html">Potosí</a>
+            <a href="maritime.html">Maritime Enterprise</a>
+            <a href="treatise.html">Treatise</a>
+            <a href="gallery.html">Gallery</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<div class="header">
-<h1>CAPUCHINO ARCHIVE</h1>
-<p>Ludwig Alexander de Capuchino</p>
-</div>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="archive-label">// Archive Index</div>
+        <nav class="sidebar-nav">
+          <a class="active" href="index.html">Home Register</a>
+          <a href="biography.html">Early Life & Formation</a>
+          <a href="potosi.html">Potosí & Lima</a>
+          <a href="maritime.html">Private Maritime Enterprise</a>
+          <a href="treatise.html">Combative Merchanting</a>
+          <a href="gallery.html">Ships, Orders & Estates</a>
+        </nav>
 
-<div class="sidebar">
-<a href="index.html">Home</a>
-<a href="biography.html">Biography</a>
-<a href="potosi.html">Potosí</a>
-<a href="maritime.html">Maritime Enterprise</a>
-<a href="treatise.html">Treatise</a>
-<a href="gallery.html">Gallery</a>
-</div>
+        <div class="sidebar-card">
+          <h3>Principal Dates</h3>
+          <p><strong>1689:</strong> Birth</p>
+          <p><strong>1718–1719:</strong> First Atlantic commission</p>
+          <p><strong>1723–1724:</strong> Second Potosí expedition</p>
+          <p><strong>1728–1729:</strong> Cádiz reorientation</p>
+          <p><strong>1731 onward:</strong> Company voyages</p>
+        </div>
 
-<div class="content">
-<h2>Welcome</h2>
-<p>This site documents Ludwig Capuchino based directly on archival narrative.</p>
+        <div class="sidebar-card">
+          <h3>Search Tips</h3>
+          <p>Try searching for <em>Calatrava</em>, <em>San Cristóforo</em>, <em>coffee</em>, <em>Cádiz</em>, <em>Salvadore</em>, or <em>combativo</em>.</p>
+        </div>
+      </aside>
 
-<h3>Core Themes</h3>
-<ul>
-<li>Bourbon administrative service</li>
-<li>Potosí expeditions</li>
-<li>Coffee discovery</li>
+      <main class="main">
+        <div class="breadcrumb">CAPUCHINO.ES &gt; Historical Library &gt; Archive Overview</div>
+
+        <section class="page-hero">
+          <div>
+            <div class="portrait-box">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80" alt="Portrait placeholder for Ludwig Alexander de Capuchino">
+            </div>
+            <div class="caption"><strong>Ludwig Alexander de Capuchino.</strong> Replace with a painted or engraved principal portrait.</div>
+          </div>
+
+          <div>
+            <div class="hero-meta">1689–1762 · Bourbon servant · maritime entrepreneur · estate subject</div>
+            <h1 class="hero-title">The Capuchino Estate Historical Library</h1>
+            <p>This website is designed as a family archive in the style of an early-2000s state historical portal: textured, formal, slightly bureaucratic, and heavily oriented around the biographical narrative of Ludwig Alexander de Capuchino.</p>
+            <p>The site follows the movement laid out in the archive text itself: rise through Bourbon administrative culture, Atlantic commissions, the Potosí and Lima experiences, the discovery of coffee and milk preparation, inheritance of the Andalusian estate, and the eventual development of a private maritime enterprise governed by his doctrine of <em>comercio combativo</em>.</p>
+
+            <div class="search-panel-wrapper">
+              <form class="search-panel" data-archive-search>
+                <input type="search" placeholder="Search the archive...">
+                <button type="submit">Search</button>
+                <button type="button" class="secondary" onclick="this.form.querySelector('input').value=''; this.closest('.search-panel-wrapper').querySelector('.search-results').classList.remove('visible'); this.closest('.search-panel-wrapper').querySelector('.search-results').innerHTML='';">Clear</button>
+              </form>
+              <div class="search-results"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Archive Divisions</h2>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Early Life & Formation</h3>
+              <p>Birth into a rising administrative-financial family, education in Madrid, Wittenberg, and Strasbourg, and entry into the Bourbon-French orbit.</p>
+              <a class="button" href="biography.html">Open Biography</a>
+            </article>
+            <article class="card">
+              <h3>Potosí & Lima</h3>
+              <p>Atlantic passage aboard the <em>San Cristóforo</em>, grave illness, recovery through colonial coffee, and exposure to extraction economies.</p>
+              <a class="button" href="potosi.html">Open Potosí File</a>
+            </article>
+            <article class="card">
+              <h3>Maritime Enterprise</h3>
+              <p>Cádiz office, the Fránckentine-Capuchino Company, Atlantic routes, and the shift from regulated commerce to directed intervention.</p>
+              <a class="button" href="maritime.html">Open Maritime File</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Archival Summary</h2>
+          <div class="grid-2">
+            <div class="feature-box">
+              <h3>Principal Distinctions and Family Position</h3>
+              <p>Capuchino’s archive presents a family of service nobility rather than ancient landed aristocracy. The father, Barclay de Capuchino, is tied to the Madrid Mint and later to the Order of Montesa, while Ludwig is eventually received into the Order of Calatrava after his second Potosí expedition.</p>
+            </div>
+            <div class="timeline-box">
+              <h3>Chronology</h3>
+              <p><strong>1689:</strong> Born in Spain.</p>
+              <p><strong>1710–1711:</strong> Enters French administrative orbit.</p>
+              <p><strong>1718:</strong> Sails on the <em>San Cristóforo</em>.</p>
+              <p><strong>1723–1724:</strong> Returns to Potosí and expands coffee interests.</p>
+              <p><strong>1729:</strong> Establishes Cádiz office and private venture.</p>
+              <p><strong>1731–1733:</strong> Company system extends across Lima, Havana, and Cádiz.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Research Note</h2>
+          <blockquote>This site works best when treated not as a modern biography but as a preserved institutional archive: formal in tone, documentary in structure, and conscious of both family memory and state record.</blockquote>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer">Ref: CAP/ARCH/LIB/1730 · Multi-page estate archive prepared for GitHub Pages deployment</footer>
+  </div>
+</body>
+</html>
+
 <li>Combative commerce</li>
 </ul>
 
